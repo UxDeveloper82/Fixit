@@ -73,6 +73,7 @@ namespace mvc.Controllers.Api
          public void DeleteCustomer(int id)
          {
             var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
+
             if (customerInDb == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 

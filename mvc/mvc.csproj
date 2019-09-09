@@ -184,6 +184,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Api\BlogsController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -236,8 +237,13 @@
     <Compile Include="Migrations\201909041838598_Genres.Designer.cs">
       <DependentUpon>201909041838598_Genres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909091220262_AddMyBlog.cs" />
+    <Compile Include="Migrations\201909091220262_AddMyBlog.Designer.cs">
+      <DependentUpon>201909091220262_AddMyBlog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -262,9 +268,14 @@
     <Content Include="Content\Images\90daywarranty.png" />
     <Content Include="Content\Images\creditcardpayment.png" />
     <Content Include="Content\Images\Customer-Support.jpg" />
+    <Content Include="Content\Images\diagnosis_repair_icon.png" />
+    <Content Include="Content\Images\LOW-PRICE.jpg" />
+    <Content Include="Content\Images\setup_installation_icon.png" />
     <Content Include="Content\Images\slide1.png" />
     <Content Include="Content\Images\slide2.jpg" />
     <Content Include="Content\Images\slide3.png" />
+    <Content Include="Content\Images\speedup_icon.png" />
+    <Content Include="Content\Images\virus_spyware_icon.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -384,6 +395,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909041838598_Genres.resx">
       <DependentUpon>201909041838598_Genres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909091220262_AddMyBlog.resx">
+      <DependentUpon>201909091220262_AddMyBlog.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

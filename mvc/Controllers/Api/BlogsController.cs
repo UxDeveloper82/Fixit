@@ -36,7 +36,7 @@ namespace mvc.Controllers.Api
         [HttpPost]
         public Blog CreateBlog(Blog blog)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
 
             _context.Blogs.Add(blog);
